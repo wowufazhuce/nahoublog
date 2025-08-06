@@ -5,14 +5,6 @@
 @import './swup.css';
 
 @font-face {
-  font-family: '65w'; /* 字体名称，可自定义 */
-  src: url('/fonts/65w.ttf') format('truetype'); /* TTF 格式字体文件路径 */
-  font-weight: normal; /* 常规字重 */
-  font-style: normal; /* 正常样式 */
-  font-display: swap; /* 提升加载体验 */
-}
-
-@font-face {
   font-family: 'Atkinson';
   src: url('/fonts/atkinson-regular.woff') format('woff');
   font-weight: 400;
