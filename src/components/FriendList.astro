@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
+
+type Friend = CollectionEntry<'friends'>
+
+export interface FriendListProps {
+  // 可以添加组件props定义
+}
+
+const friends = await getCollection('friends')
+
+// 按分类分组
+const friendsByCategory = friends.reduce((groups: Record<string, Friend[]>, friend: Friend) => {
+  const category = friend.data.category || '未分类'
+  if (!groups[category]) {
+    groups[category] = []
+  }
+  groups[category].push(friend)
+  return groups
+}, {})
+
+// 获取所有分类并排序
+const categories = Object.keys(friendsByCategory).sort()
+---
+
+{categories.map((category) => (
+  <div class="mb-8" id={category}> {/* 使用id代替key */}
+    <h3 class="text-xl font-bold mb-4">{category}</h3>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
+      {friendsByCategory[category].map((friend: Friend) => (
+        <li data-key={friend.id}> {/* 使用data-key代替key */}
+          <a href={friend.data.link} target="_blank" rel="noopener noreferrer external">
+            <div class="p-4 flex gap-2 bg-accent/10 rounded-lg group">
+              <img
+                class="shrink-0 size-16 object-contain rounded-full"
+                src={friend.data.avatar}
+                alt={`Friend avatar: ${friend.data.title}`}
+                loading="lazy"
+              />
+              <div class="min-w-0 grow">
+                <div class="truncate font-bold text-xl group-hover:text-accent">
+                  {friend.data.title}
+                </div>
+                <div class="text-sm line-clamp-2">{friend.data.description}</div>
+              </div>
+              <i class="shrink-0 iconfont icon-external-link group-hover:text-accent" />
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+))}

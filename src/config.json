@@ -1,0 +1,143 @@
+{
+  "site": {
+    "url": "https://www.nahou.com",
+    "title": "呐吼 · 不止于沉默",
+    "description": "呐吼 - 不止于沉默",
+    "keywords": "nahou,blog,呐吼博客,梦想是混吃等死,呐吼,博客",
+    "lang": "zh-CN",
+    "favicon": "/i/favicon.ico",
+    "appleTouchIcon": "/i/apple-touch-icon.jpg"
+  },
+  "author": {
+    "name": "梦想是混吃等死",
+    "twitterId": "@lxchapu",
+    "avatar": "/i/icon.webp"
+  },
+  "hero": {
+    "name": "梦想是混吃等死",
+    "bio": "某，凡夫俗子一枚，无经天纬地之才，乏洞明世事之智。",
+    "description": "无才无识，却好妄言；身无长技，偏喜偷安。日逐三餐，夜图一眠，浑浑噩噩，一事无成。",
+    "socials": [
+      {
+        "name": "微信",
+        "icon": "icon-wechat",
+        "url": "https://wechat.houfou.com/",
+        "color": "rgb(26, 173, 25)"
+      },
+      {
+        "name": "微博",
+        "icon": "icon-weibo",
+        "url": "https://weibo.com/chinabimao/",
+        "color": "rgb(205 133 63)"
+      },
+      {
+        "name": "网易云音乐",
+        "icon": "icon-netease-cloud-music",
+        "url": "https://music.163.com/#/user?id=29872718",
+        "color": "rgb(238 0 0)"
+      },
+      {
+        "name": "Telegram",
+        "icon": "icon-telegram",
+        "url": "https://t.me/worinixianrenbanban",
+        "color": "rgb(0, 204, 255)"
+      },
+      {
+        "name": "哔哩哔哩",
+        "icon": "icon-bilibili",
+        "url": "https://space.bilibili.com/179947800",
+        "color": "rgb(255 106 106)"
+      },
+      {
+        "name": "Instagram",
+        "icon": "icon-instagram",
+        "url": "https://instagram.com/gaobanglei/",
+        "color": "rgb(138 43 226)"
+      },
+      {
+        "name": "Email",
+        "icon": "icon-mail",
+        "url": "mailto:i@nahou.com",
+        "color": "rgb(34, 46, 54)"
+      }
+    ],
+    "yiyan": "当第一颗卫星飞向大气层外，我们便以为自己终有一日会征服宇宙。"
+  },
+  "color": {
+    "accent": [
+      { "light": "#F55555", "dark": "#FCCF31" },
+      { "light": "#0396FF", "dark": "#ABDCFF" },
+      { "light": "#fb7287", "dark": "#99D8CF" },
+      { "light": "#F072B6", "dark": "#FFF886" },
+      { "light": "#9F44D3", "dark": "#E2B0FF" },
+      { "light": "#FF6666", "dark": "#A1CCD1" },
+      { "light": "#F6416C", "dark": "#838BC6" },
+      { "light": "#32CCBC", "dark": "#90F7EC" },
+      { "light": "#33A6B8", "dark": "#79F1A4" },
+      { "light": "#F55555", "dark": "#FCCF31" }
+    ],
+    "bg": {
+      "primary": { "light": "#ffffff", "dark": "#1c1c1e" },
+      "secondary": { "light": "#f4f4f5", "dark": "#27272a" }
+    },
+    "text": {
+      "primary": { "light": "#373a3c", "dark": "#ffffff" },
+      "secondary": { "light": "#71717a", "dark": "#d1d5db" }
+    },
+    "border": {
+      "primary": { "light": "#e4e4e7", "dark": "#3f3f46" }
+    }
+  },
+  "menus": [
+    {
+      "name": "首页",
+      "link": "/",
+      "icon": "icon-pantone"
+    },
+    {
+      "name": "归档",
+      "link": "/archives",
+      "icon": "icon-archive"
+    },
+    {
+      "name": "相册",
+      "link": "/projects",
+      "icon": "icon-heart"
+    },
+    {
+      "name": "友链",
+      "link": "/friends",
+      "icon": "icon-hearts"
+    },
+    {
+      "name": "关于",
+      "link": "/about",
+      "icon": "icon-ghost"
+    }
+  ],
+  "posts": {
+    "perPage": 10
+  },
+  "footer": {
+    "startTime": "2024-03-13T00:00:00Z"
+  },
+  "waline": {
+    "serverURL": "https://w.nahou.com"
+  },
+  "sponsor": {
+    "wechat": "/i/qr.png"
+  },
+  "analytics": {
+    "enable": true,
+    "google": {
+      "measurementId": ""
+    },
+    "umami": {
+      "serverUrl": "",
+      "websiteId": ""
+    },
+    "microsoftClarity": {
+      "projectId": "slez8ovoja"
+    }
+  }
+}

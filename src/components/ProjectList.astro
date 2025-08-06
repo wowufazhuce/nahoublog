@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content'
+
+const projects = await getCollection('projects')
+---
+
+<div class="container mx-auto px-4 py-8">
+  <!-- 马赛克拼贴布局 -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+    {projects.map((project, index) => (
+      <div 
+        class="relative overflow-hidden rounded-lg group cursor-pointer transition-all duration-300 hover:shadow-xl" 
+        style={index % 7 === 0 ? 'grid-column: span 2; grid-row: span 2' : 
+               index % 5 === 0 ? 'grid-column: span 2' : 
+               index % 3 === 0 ? 'grid-row: span 2' : ''}
+        data-image={JSON.stringify({
+          title: project.data.title,
+          image: project.data.image,
+          description: project.data.description,
+          location: project.data.location || '',
+        })}
+        onclick="openImageViewer(this.dataset.image)"
+      >
+        <img
+          src={project.data.image}
+          alt={`Gallery image: ${project.data.title}`}
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2 sm:p-3 flex flex-col justify-end">
+          <h3 class="text-pink-300 text-xs sm:text-sm font-medium truncate">
+            {project.data.title}
+          </h3>
+          <p class="text-pink-200 text-xs mt-1 line-clamp-1 sm:line-clamp-2">
+            {project.data.description}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  function openImageViewer(imageData: string) {
+    try {
+      const data = JSON.parse(imageData);
+      // 这里可以实现打开模态框等查看详情的逻辑
+      console.log('Opening viewer for:', data);
+      
+      // 示例：创建一个简单的模态框
+      const modal = document.createElement('div');
+      modal.className = 'fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4';
+      modal.innerHTML = `
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
+          <div class="p-4 flex justify-between items-center border-b">
+            <h2 class="text-xl font-bold">${data.title}</h2>
+            <button onclick="document.body.removeChild(this.closest('div.fixed'))" class="text-gray-500 hover:text-gray-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="p-4">
+            <img src="${data.image}" alt="${data.title}" class="w-full h-auto rounded-lg mb-4">
+            <p class="text-gray-700 mb-2">${data.description}</p>
+            ${data.location ? `<p class="text-gray-500 text-sm mb-1"><span class="font-medium">Location:</span> ${data.location}</p>` : ''}
+            ${data.category ? `<p class="text-gray-500 text-sm mb-1"><span class="font-medium">Category:</span> ${data.category}</p>` : ''}
+            ${data.date ? `<p class="text-gray-500 text-sm"><span class="font-medium">Date:</span> ${data.date}</p>` : ''}
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+    } catch (error) {
+      console.error('Error parsing image data:', error);
+    }
+  }
+</script>  
+
