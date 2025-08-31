@@ -6,7 +6,6 @@ const config: Config = {
   theme: {
     fontFamily: {
       sans: [
-        '"65w"', 
         '"Noto Sans SC"',
         '"Source Han Sans SC"',
         'sans-serif',
