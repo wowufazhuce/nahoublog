@@ -6,9 +6,15 @@ comments: false
 
 ![](https://tc.z.wiki/autoupload/f/ep5yge1t_1NOTKAFsP5-RQ/20250726/1Izd/1920X716/wall.webp)
 
-## 关于 呐吼
+## 关于老儒杂谈
 
-呐吼创建于2024.3.13，恰好这天是我的生日，博客名字也是依据域名 nahou.com 起的
+老儒杂谈创建于2024.3.13，恰好这天是我的生日，那时候还叫呐吼，网址为：https://nahou.com/
+
+2025年8月30日，原 nahou.com 被人以2000元价格买走
+
+所以我将博客的域名从 nahou.com 改为 laoru.com
+
+博客名字也改为了老儒杂谈
 
 ### 网站历程
 
@@ -17,6 +23,8 @@ comments: false
 - 2025.3.10 [京东云](https://www.jdcloud.com/)到期，转入[腾讯云](https://cloud.tencent.com/)
 
 - 2025.7.26 更换博客程序到[Astro](https://astro.build/)
+
+- 2025.8.30 原域名 nahou.com 被人买走，随后改为现有域名
 
 ### 碎碎念
 
@@ -72,7 +80,7 @@ Wechat：lei-wa
 
 QQ：17609229
 
-邮箱：i@nahou.com
+邮箱：i@laoru.com
 
 ## 感谢以下项目
 

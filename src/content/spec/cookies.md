@@ -1,6 +1,6 @@
 ---
 title: Cookies
-description: 为了确保网站和我开发的软件的可靠性、安全性和个性化，本站使用 Cookies。
+description: 为了确保网站的可靠性、安全性和个性化，本站使用 Cookies。
 comments: false
 ---
 
@@ -8,7 +8,7 @@ comments: false
 
 本政策应与[隐私政策](/privacy)一起阅读，该隐私政策解释了本站如何使用个人信息。
 
-如果你对我使用你的个人信息或 Cookies 的方式有任何疑问，请通过 i@nahou.com 与我联系。
+如果你对我使用你的个人信息或 Cookies 的方式有任何疑问，请通过 i@laoru.com 与我联系。
 
 如果你想管理你的 Cookies，请按照下面“如何管理 Cookies”部分中的说明进行操作。
 
@@ -52,7 +52,7 @@ Cookies 提供许多功能。例如，他们可以帮助我记住你喜欢深色
 
 ## 更多信息
 
-有关我数据处理的更多信息，请参阅我的隐私政策。如果你对此Cookie政策有任何疑问，请通过 i@nahou.com 与我联系。
+有关我数据处理的更多信息，请参阅我的[隐私政策](/privacy)。如果你对此Cookie政策有任何疑问，请通过 i@laoru.com 与我联系。
 
 ## 对此Cookie政策的更改
 

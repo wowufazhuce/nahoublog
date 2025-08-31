@@ -2,6 +2,7 @@ import { HeaderMetaInfoProvider } from './HeaderMetaInfoProvider'
 import { PageScrollInfoProvider } from './PageScrollInfoProvider'
 import { ThemeProvider } from './ThemeProvider'
 import { ViewportProvider } from './ViewportProvider'
+import { CookiesNoticeProvider } from './CookiesNoticeProvider'
 
 export function Provider(props: {
   pathName: string
@@ -15,6 +16,7 @@ export function Provider(props: {
       <PageScrollInfoProvider />
       <ThemeProvider />
       <ViewportProvider />
+      <CookiesNoticeProvider />
     </>
   )
 }

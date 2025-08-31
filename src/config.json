@@ -1,9 +1,9 @@
 {
   "site": {
-    "url": "https://www.nahou.com",
-    "title": "呐吼 · 不止于沉默",
-    "description": "呐吼 - 不止于沉默",
-    "keywords": "nahou,blog,呐吼博客,梦想是混吃等死,呐吼,博客",
+    "url": "https://www.laoru.com",
+    "title": "老儒杂谈",
+    "description": "老儒杂谈 · 聊人间百态，品生活真味",
+    "keywords": "laoru,blog,老儒博客,梦想是混吃等死,老儒,博客",
     "lang": "zh-CN",
     "favicon": "/i/favicon.ico",
     "appleTouchIcon": "/i/apple-touch-icon.jpg"
@@ -122,7 +122,7 @@
     "startTime": "2024-03-13T00:00:00Z"
   },
   "waline": {
-    "serverURL": "https://w.nahou.com"
+    "serverURL": "https://waline.laoru.com"
   },
   "sponsor": {
     "wechat": "/i/qr.png"
